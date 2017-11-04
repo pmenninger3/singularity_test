@@ -21,6 +21,9 @@ From: ubuntu:latest
 	apt-get install -y python-pip python-dev build-essential
 	pip install --upgrade pip
 	pip install --upgrade virtualenv
+	
+	echo "Installing python-tk"
+	apt-get install -y python-tk
 
 	echo "Installing TensorFlow"
 	pip install tensorflow
