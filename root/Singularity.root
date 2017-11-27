@@ -19,7 +19,7 @@ From: ubuntu:latest
 
 	echo "Installing mandatory ROOT dependencies"
 	apt-get install -y dpkg-dev
-	apt-get dist-upgrade
+	apt-get -y dist-upgrade
 	apt-get install -y cmake
 	apt-get install -y g++
 	apt-get install -y build-essential # for gcc
