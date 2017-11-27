@@ -41,8 +41,8 @@ From: ubuntu:latest
 	tar -zxf root_v6.10.08.source.tar.gz
 	mkdir ~/root_build
 	cd ~/root_build
-	cmake ~/root_download
-	cmake --build
+	#cmake ~/root_download
+	#cmake --build
 	#source ~/root_build/dir/bin/thisroot.sh
 	
 
@@ -52,4 +52,4 @@ From: ubuntu:latest
 	pip install --upgrade virtualenv
 
 	echo "Installing rootpy"
-	pip install rootpy
+	#pip install rootpy
