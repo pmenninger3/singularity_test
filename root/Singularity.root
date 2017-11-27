@@ -32,7 +32,16 @@ From: ubuntu:latest
 	apt-get install -y libjpeg-dev
 
 	echo "Installing ROOT"
-	apt-get install -y root-system
+	mkdir ~/root_download
+	cd ~/root_download
+	wget https://root.cern.ch/download/root_v6.10.08.source.tar.gz
+	tar -zxf root_v6.10.08.source.tar.gz
+	mkdir ~/root_build
+	cd ~/root_build
+	cmake ~/root_download
+	cmake --build
+	#source ~/root_build/dir/bin/thisroot.sh
+	
 
 	echo "Installing pip and virtualenv"
 	apt-get install -y python-pip python-dev
