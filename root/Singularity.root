@@ -31,6 +31,9 @@ From: ubuntu:latest
 	apt-get install -y libpng-dev
 	apt-get install -y libjpeg-dev
 
+	echo "Installing wget"
+	apt-get install -y wget
+
 	echo "Installing ROOT"
 	mkdir ~/root_download
 	cd ~/root_download
