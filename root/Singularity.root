@@ -28,8 +28,8 @@ From: ubuntu:latest
 	apt-get install -y libxpm-dev
 	apt-get install -y libxft-dev
 	apt-get install -y libxext-dev
-	apt-get install -y libpng
-	apt-get install -y libjpeg
+	apt-get install -y libpng-dev
+	apt-get install -y libjpeg-dev
 
 	echo "Installing ROOT"
 	apt-get install -y root-system
