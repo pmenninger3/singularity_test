@@ -42,7 +42,7 @@ From: ubuntu:latest
 	ls root-6.10.08
 	mkdir ~/root_build
 	cd ~/root_build
-	cmake ~/root_download/root-6.10.08
+	#cmake ~/root_download/root-6.10.08
 	#cmake --build .
 	#source ~/root_build/root-6.10.08/dir/bin/thisroot.sh
 	
