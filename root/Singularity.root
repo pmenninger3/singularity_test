@@ -44,13 +44,13 @@ From: ubuntu:latest
 	cd ~/root_build
 	cmake ~/root_download/root-6.10.08
 	cmake --build .
-	source ~/root_build/root-6.10.08/dir/bin/thisroot.sh
+	#source ~/root_build/root-6.10.08/dir/bin/thisroot.sh
 	
 
 	echo "Installing pip and virtualenv"
-	apt-get install -y python-pip python-dev
-	pip install --upgrade pip
-	pip install --upgrade virtualenv
+	#apt-get install -y python-pip python-dev
+	#pip install --upgrade pip
+	#pip install --upgrade virtualenv
 
 	echo "Installing rootpy"
-	pip install rootpy
+	#pip install rootpy
