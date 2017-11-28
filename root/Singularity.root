@@ -39,11 +39,12 @@ From: ubuntu:latest
 	cd ~/root_download
 	wget https://root.cern.ch/download/root_v6.10.08.source.tar.gz
 	tar -zxf root_v6.10.08.source.tar.gz
+	ls
 	mkdir ~/root_build
 	cd ~/root_build
-	#cmake ~/root_download
-	#cmake --build
-	#source ~/root_build/dir/bin/thisroot.sh
+	cmake ~/root_download/root_v6.10.08
+	cmake --build
+	source ~/root_build/root_v6.10.08/dir/bin/thisroot.sh
 	
 
 	echo "Installing pip and virtualenv"
@@ -52,4 +53,4 @@ From: ubuntu:latest
 	pip install --upgrade virtualenv
 
 	echo "Installing rootpy"
-	#pip install rootpy
+	pip install rootpy
